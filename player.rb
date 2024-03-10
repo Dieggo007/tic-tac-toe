@@ -10,6 +10,9 @@ class Player
 
   def play_turn(board)
     board.draw_on_board(name, token)
+  end
+
+  def has_won?(board)
     board.did_the_player_win?(token)
   end
 
