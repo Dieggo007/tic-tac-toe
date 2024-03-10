@@ -53,9 +53,9 @@ class TicTacToeBoard
 
   def did_the_player_win?(token)
     diagonal_count = [0, 0]
-    (0..2).each { |i|
+    3.times { |i|
       count = [0, 0]
-      (0..2).each { |j|
+      3.times { |j|
         count[0] += 1 if board[i][j][1] == token
         count[1] += 1 if board[j][i][1] == token
       }

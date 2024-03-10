@@ -1,5 +1,5 @@
-require_relative 'player'
-require_relative 'tic_tac_toe_board'
+require './player.rb'
+require './tic_tac_toe_board.rb'
 
 def loop_game
   board = TicTacToeBoard.new
